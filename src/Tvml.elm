@@ -13,6 +13,52 @@ module Tvml exposing
   , decorationLabel, description, monogram, ordinal, strike, subtitle, text, title
   )
 
+{-| This file is organized roughly in the same order as the documentation on Apple's TVML [guide][].
+
+# Core Types
+@docs Tvml, Attribute
+
+# Primitives
+@docs plainText, map
+
+# Compound Elements
+
+## Compound Background Elements
+@docs audio, background
+
+## Compound Banner and Header Elements
+@docs banner, footer, header, identityBanner, itemBanner, segmentBarHeader
+
+## Compound Information Elements
+@docs activityIndicator, info, menuItem, nowPlayingMenuItem, placeholder, productInfo, ratingCard, relatedContent, reviewCard, segmentBarItem, tumblerItem
+
+## Compound Layout Elements
+@docs button, card, carousel, collectionList, grid, imgDeck, infoList, infoTable, list, menuBar, organizer, overlay, row, section, segmentBar, separator, stack, tumblerBar
+
+## Compound Lockup Elements
+@docs buttonLockup, listItemLockup, lockup, monogramLockup
+
+## Compound Multimedia Elements
+@docs mediaContent
+
+## Compound Shelf Elements
+@docs shelf
+
+# Simple Elements
+
+## Simple Display Elements
+@docs badge, decorationImage, fullscreenImg, heroImg, img, progressBar, ratingBadge, seasonBadge, textBadge
+
+## Simple Multimedia Elements
+@docs asset, relatedContentURL, searchField, textField
+
+## Simple Text Elements
+@docs decorationLabel, description, monogram, ordinal, strike, subtitle, text, title
+
+[guide]: https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/index.html
+
+-}
+
 import VirtualDom
 
 -- CORE TYPES
